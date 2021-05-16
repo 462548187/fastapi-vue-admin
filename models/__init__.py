@@ -5,3 +5,4 @@ from models.role.models import *
 from models.menu.models import *
 from models.perm.models import *
 from models.cmdb.models import *
+from models.issue.models import *

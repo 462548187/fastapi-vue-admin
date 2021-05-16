@@ -6,6 +6,7 @@ from apis.role.controller import role_router
 from apis.menu.controller import menu_router
 from apis.perm.controller import perm_router
 from apis.cmdb.controller import cmdb_router
+from apis.issue.controller import issue_router
 
 api_router = APIRouter()
 # router注册
@@ -16,3 +17,4 @@ api_router.include_router(role_router, prefix="/role", tags=["role"])
 api_router.include_router(menu_router, prefix="/menu", tags=["menu"])
 api_router.include_router(perm_router, prefix="/perm", tags=["perm"])
 api_router.include_router(cmdb_router, prefix="/cmdb", tags=["cmdb"])
+api_router.include_router(issue_router, prefix="/issue", tags=["issue"])

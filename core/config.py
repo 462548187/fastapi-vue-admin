@@ -17,7 +17,7 @@ class Settings:
     # 跨域白名单
     BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = ["http://localhost:8000"]
     # db配置
-    DB_URL = "mysql+pymysql://root:12345678@127.0.0.1:3306/fastapi-vue"
+    DB_URL = "mysql+pymysql://root:12345678@127.0.0.1:3306/fastapi-vue-admin"
     # 启动端口配置
     PORT = 8999
     # 是否热加载
@@ -31,7 +31,8 @@ class Settings:
     if not os.path.exists(CMDB_FOLDER):
         os.mkdir(CMDB_FOLDER)
     # 日志收集器
-    LOG_FOLDER = "D:\\code\\fastapi-logs"
+    # LOG_FOLDER = "D:\\code\\fastapi-logs"
+    LOG_FOLDER = "./fastapi-logs"
     if not os.path.exists(LOG_FOLDER):
         os.mkdir(LOG_FOLDER)
     t = time.strftime("%Y_%m_%d")
